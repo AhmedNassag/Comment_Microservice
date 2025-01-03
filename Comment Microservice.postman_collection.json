@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "8b39e358-6c77-4820-b7d9-b2e4056f6a8f",
+		"name": "Comment Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19135530"
+	},
+	"item": [
+		{
+			"name": "comments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2Nsb3RoaW5nYXBwLmZhc2hpb25tYXIuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzA1MjQyODY3LCJleHAiOjE3MDUyNDY0NjcsIm5iZiI6MTcwNTI0Mjg2NywianRpIjoiT3lyeTVVYlpUbW83N0VJRSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OnygzOYTeLzQURsoqmoPTSHyXF0Vcl2Q6tmoNGOvPZ8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://comment_microservice.com/api/post/1/comments",
+					"protocol": "http",
+					"host": [
+						"comment_microservice",
+						"com"
+					],
+					"path": [
+						"api",
+						"post",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post comments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2Nsb3RoaW5nYXBwLmZhc2hpb25tYXIuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzA1MjQyODY3LCJleHAiOjE3MDUyNDY0NjcsIm5iZiI6MTcwNTI0Mjg2NywianRpIjoiT3lyeTVVYlpUbW83N0VJRSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OnygzOYTeLzQURsoqmoPTSHyXF0Vcl2Q6tmoNGOvPZ8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://comment_microservice.com/api/post/1/comments",
+					"protocol": "http",
+					"host": [
+						"comment_microservice",
+						"com"
+					],
+					"path": [
+						"api",
+						"post",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2Nsb3RoaW5nYXBwLmZhc2hpb25tYXIuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzA1MjQyODY3LCJleHAiOjE3MDUyNDY0NjcsIm5iZiI6MTcwNTI0Mjg2NywianRpIjoiT3lyeTVVYlpUbW83N0VJRSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OnygzOYTeLzQURsoqmoPTSHyXF0Vcl2Q6tmoNGOvPZ8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "post_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "text 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://comment_microservice.com/api/comment",
+					"protocol": "http",
+					"host": [
+						"comment_microservice",
+						"com"
+					],
+					"path": [
+						"api",
+						"comment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
